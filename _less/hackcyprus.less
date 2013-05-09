@@ -158,11 +158,26 @@ body {
 
 header {
     background: #fff;
-    padding: 6em 2em 6em 2em;
+    padding: 5.5em 2em 6.5em 2em;
     border-top: 0.75em solid #efefef;
     border-left: 0.75em solid #efefef;
+    position: relative;
     border-right: 0.75em solid #efefef;
+    overflow: hidden;
 
+    #map {
+        width: 7em;
+        margin: 0 auto;
+        height: 4em;
+        position: relative;
+        margin-bottom: 1em;
+    }
+
+    svg {
+       width: 100%;
+       position: absolute;
+       top: 0px;
+       }
 
     h1 {
         font-size: 3.125em;
@@ -170,14 +185,16 @@ header {
         font-weight: 100;
         color: #3a3a3a;
         margin-bottom: 1.125em;
+
         span {
             font-weight: 600;
         }
     }
     p {
+   
         font-weight: 300;
         font-size: 1.25em;
-        max-width: 30em;
+        max-width: 32em;
         text-align: center;
         margin: 0 auto;
         line-height: 1.7;
@@ -201,12 +218,21 @@ nav {
 
         div {
             padding: 4em 0 4em 0;
+            position: relative;
         }
         h1 {
             text-align: center;
-            font-size: 5em;
+            font-size: 3em;
             font-weight: 100;
             line-height: 0.8;
+        }
+        span {
+            position: absolute;
+            color: #176c6f;
+            left: 0;
+            right: 0;
+            text-align: center;
+            padding: 1em 0;
         }
     }
     a {
