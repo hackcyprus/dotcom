@@ -231,7 +231,7 @@ nav:after {
   clear: both;
 }
 nav a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 nav a div {
   padding: 5em 0 5em 0;
@@ -241,7 +241,7 @@ nav a h1 {
   text-align: center;
   font-size: 3em;
   font-weight: 100;
-  line-height: 0.8;
+  line-height: 1.5;
 }
 nav a span {
   position: absolute;
@@ -278,11 +278,32 @@ nav a.second:hover {
 nav a.second:hover h1 {
   color: #fff;
 }
+
+
+nav a.third {
+  
+  background: #ffd900;
+}
+nav a.third h1 {
+  color: #bda623;
+}
+nav a.third:hover {
+  background-color: #e4c200;
+}
+nav a.third:hover h1 {
+  color: #fff;
+}
+
 @media only screen and (min-width: 600px) {
   nav a {
-    width: 50%;
+  /*  width: 50%;
     display: block;
-    float: right;
+    float: right; */
+    margin:0 auto;
+    border-radius: 50%;
+    width:200px;
+    height: 200px;
+
   }
   nav a.first {
     background: #ffd900;
